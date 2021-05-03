@@ -1,0 +1,96 @@
+:root{
+    --color-purple:  #363f5f;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;;
+}
+h2{
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-purple);
+    font-weight: normal;
+}
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+header {
+    background: #2D4A22;
+    padding: 2rem 0 10rem;
+    text-align: center;
+    }
+header h1 {
+
+    color: #fff;
+    font-weight: 100;
+}
+
+.card{
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-purple);
+}
+
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total{
+    background: #49aa26;
+    color: #fff;
+}
+#balance{
+    margin-top: -8rem;
+}
+#balance h2{
+    color: #fff;
+    margin-top: 0;
+}
+
+#data-table{
+    width: 100%;
+    border-spacing: 0rem 0.5rem;
+    color: #969cb3;
+}
+table th{
+    background: white;
+    color: #969cb3;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+table td{
+    background: white;
+    padding: 1rem 2rem;
+    font-weight: normal;
+}
+table tr{
+    opacity: 0.7;
+}
+table tr:hover{
+    opacity: 1;
+}
+table thead th:first-child,
+table tbody td:first-child{
+
+    border-radius: 0.25rem 0 0 0.25rem;
+
+}
+footer{
+    text-align: center;
+}
