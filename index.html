@@ -11,38 +11,45 @@
   </head>
   <body>
     <header>
-      <h1 id="logo">dev.finance$</h1>
+      <img src="./assets/logo.svg" alt="Logo Dev Finance" >
     </header>
 
     <main class="container">
       <section id="balance">
-        <h2>Balanço</h2>
+        <h2 class="slr-only">Balanço</h2>
 
         <div class="card">
-          <h3>Entradas</h3>
+          <h3><span>Entradas</span>
+          <img src="./assets/income.svg" alt="Entrada" >
+          </h3>
           <p>R$ 5000,00</p>
         </div>
 
         <div class="card">
-          <h3>Saídas</h3>
+          <h3><span>Saídas</span>
+          <img src="./assets/expense.svg" alt="Saída">
+        </h3>
           <p>R$ 2000,00</p>
         </div>
 
         <div class="card total">
-          <h3>Total</h3>
+          <h3><span>Total</span>
+            <img src="./assets/total.svg" alt="Total">
+          </h3>
           <p>R$ 2000,00</p>
         </div>
       </section>
 
       <section id="transaction">
-        <h2>Transações</h2>
-
+        <h2 class="slr-only"> Transações</h2>
+        <a href="#" class="button new">Nova Transação</a>
         <table id="data-table">
           <thead>
             <tr>
               <th>Descrição</th>
               <th>Valor</th>
               <th>Data</th>
+              <th><img src="./assets/plus.svg" alt="Adicionar"></th>
             </tr>
           </thead>
           <tbody>
@@ -50,23 +57,42 @@
               <td>Luz</td>
               <td>- R$ 500,00</td>
               <td>23/01/2021</td>
+              <td><img src="./assets/minus.svg" alt="Remover"></td>
             </tr>
             <tr>
               <td>Criação de Website</td>
               <td>R$ 14500,00</td>
               <td>23/01/2021</td>
+              <td><img src="./assets/minus.svg" alt="Remover"></td>
             </tr>
             <tr>
               <td>Internet</td>
               <td>- R$ 500,00</td>
               <td>23/01/2021</td>
+              <td><img src="./assets/minus.svg" alt="Remover"></td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
 
-    <footer >
+
+    <div class="modal-overlay active">
+      <div class="modal">
+        
+          <div class="form">
+            <h2>Nova Transação</h2>
+            <form action="">
+              <div class="input-group">
+                <label for="description">Descrição</label>
+                <input type="text" id="description" name="description" placeholder="Descrição"> 
+              </div>
+            </form>
+          </div>
+        
+      </div>
+    </div>
+    <footer>
       <p>dev.finace$</p>
     </footer>
   </body>
